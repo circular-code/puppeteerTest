@@ -45,7 +45,7 @@ const fs = require('fs-extra');
                 let weight  = await product.$eval('.products-details-weight-container', (span) => {
                     return span.innerText.trim();
                 });
-                
+
                 name = name.replace(/ö/g, 'oe');
                 name = name.replace(/ä/g, 'ae');
                 name = name.replace(/ü/g, 'ue');
